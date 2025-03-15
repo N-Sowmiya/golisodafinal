@@ -1,0 +1,135 @@
+.about-component {
+    padding: 4rem 2rem;
+    background-color: white;
+    text-align: center;
+    display: flex;
+    gap:2%;
+    align-items: center;
+  }
+  
+  .about-component h1 {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    color: #333;
+  }
+  
+  .stats-section {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right:20%;
+   padding: 20%;
+  }
+  
+  .stat {
+    text-align: center;
+  }
+  
+  .stat h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color:red;
+  }
+  .stat p {
+    font-size: 1.1rem;
+    color: #555;
+  }
+  .quality-section {
+    background-color: #f9f9f9;
+    padding: 2%;
+    max-width: 800px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right:20%;
+    padding: 20%;
+  }
+  
+  .quality-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    color:red;
+  }
+  
+  .quality-section p {
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .textcontent{
+    margin-left:20%;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding:2%;
+    height: 30%;
+    width:30%;
+    text-align: left;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  .storytitle{
+    text-align: center;
+    color:black;
+    font-size: 2.8rem;
+
+  }
+  .highlight{
+    color: red;
+    font-size: 2.8rem;
+  }
+  @media (max-width: 768px) {
+    .about-component {
+      flex-direction: column; /* Stack elements vertically */
+      text-align: center;
+      padding: 3rem 1.5rem; /* Maintain good spacing */
+      gap: 2rem; /* Increase spacing between sections */
+    }
+  
+    .textcontent {
+      width: 90%;
+      margin: 0 auto;
+      padding: 2rem;
+      font-size: 1.1rem;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    }
+  
+    .stats-section,
+    .quality-section {
+      width: 90%;
+      margin: 0 auto;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+  
+    .storytitle {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem; /* Maintain spacing below title */
+    }
+  
+    .highlight {
+      font-size: 2.5rem;
+    }
+  
+    .stat h2 {
+      font-size: 2rem;
+    }
+  
+    .stat p,
+    .quality-section p {
+      font-size: 1.1rem;
+    }
+  
+    /* Add space between sections */
+    .stats-section {
+      margin-bottom: 1.5rem;
+    }
+  
+    .quality-section {
+      margin-top: 1.5rem;
+    }
+  }
+  
