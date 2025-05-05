@@ -55,7 +55,7 @@ function Contact() {
     let isValid = true;
 
     // Email Validation
-    if (!validateEmail(email)) {
+    if (email && !validateEmail(email)) {
       setEmailError('Invalid email format');
       isValid = false;
     }
@@ -78,7 +78,7 @@ function Contact() {
     formData.append("message", message);
 
     try {
-      const response = await fetch("http://localhost/projects/email.php", {
+      const response = await fetch("https://maasishop.in/email.php", {
         method: "POST",
         body: formData,
       });
@@ -153,7 +153,6 @@ function Contact() {
               placeholder="Your Email" 
               value={email}
               onChange={handleEmailChange}
-              required 
             />
             {emailError && <p style={{ color: 'red' }}>{emailError}</p>}
           </div>
